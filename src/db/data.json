@@ -1,0 +1,260 @@
+{
+    "items" : [
+        {
+            "id" : 0,
+            "img" : "./img/items/item1.webp",
+            "loca" : "Bad Hönningen, Rhein...",
+            "price" : "₩190,038 / 박",
+            "dis" : "8,588km 거리",
+            "date" : "11월 27일 ~ 12월 4일"
+        },
+        {
+            "id" : 1,
+            "img" : "./img/items/item2.webp",
+            "loca" : "Bad Hönningen, Rhein...",
+            "price" : "₩190,038 / 박",
+            "dis" : "8,588km 거리",
+            "date" : "8월 20일 ~ 27일"
+        },
+        {
+            "id" : 2,
+            "img" : "./img/items/item3.webp",
+            "loca" : "Poggibonsi, Toscana",
+            "price" : "₩1,485,671 / 박",
+            "dis" : "8,929km 거리",
+            "date" : "8월 20일 ~ 27일"
+        },
+        {
+            "id" : 3,
+            "img" : "./img/items/item4.webp",
+            "loca" : "Pleurs, Grand Est",
+            "price" : "₩1,976,172 / 박",
+            "dis" : "8,906km 거리",
+            "date" : "4월 18일 ~ 25일"
+        },
+        {
+            "id" : 4,
+            "img" : "./img/items/item5.webp",
+            "loca" : "Fife, 스코틀랜드",
+            "price" : "₩2,236,081 / 박",
+            "dis" : "8,555km 거리",
+            "date" : "4월 22일 ~ 29일"
+        },
+        { 
+            "id" : 5,
+            "img" : "./img/items/item6.webp",
+            "loca" : "몽트뢰, Vaud",
+            "price" : "₩226,444 / 박",
+            "dis" : "8,932km 거리",
+            "date" : "5월 15일 ~ 22일"
+        },
+        {
+            "id" : 6,
+            "img" : "./img/items/item7.webp",
+            "loca" : "Osowa Sień, lubuskie.",
+            "price" : "₩1,787,226 / 박",
+            "dis" : "8,022km 거리",
+            "date" : "4월 11일 ~ 18일"
+        },
+        {
+            "id" : 7,
+            "img" : "./img/items/item8.webp",
+            "loca" : "Ballintuin",
+            "price" : "₩275,591 / 박",
+            "dis" : "8,550km 거리",
+            "date" : "4월 18일 ~ 25일"
+        },
+        {
+            "id" : 8,
+            "img" : "./img/items/item9.webp",
+            "loca" : "Bouville, Île-de-Fra...",
+            "price" : "₩29,000,723/ 박",
+            "dis" : "9,006km 거리",
+            "date" : "4월 18일 ~ 25일"
+        },
+        {
+            "id" : 9,
+            "img" : "./img/items/item10.webp",
+            "loca" : "Capriva del Friuli, Friul...",
+            "price" : "₩320,461 / 박",
+            "dis" : "8,606km 거리",
+            "date" : "4월 18일 ~ 25일"
+        },
+        {
+            "id" : 10,
+            "img" : "./img/items/item11.webp",
+            "loca" : "Cazoulès, Nouvelle-...",
+            "price" : "₩2,352,441 / 박",
+            "dis" : "9,346km 거리",
+            "date" : "9월 23일 ~ 30일"
+        },
+        {
+            "id" : 11,
+            "img" : "./img/items/item12.webp",
+            "loca" : "Saint Caprais de Lerm",
+            "price" : "₩1,710,282 / 박",
+            "dis" : "9,436km 거리",
+            "date" : "4월 16일 ~ 23일"
+        },
+        {
+            "id" : 12,
+            "img" : "./img/items/item13.webp",
+            "loca" : "Deinze, Vlaanderen.",
+            "price" : "₩345,312 / 박",
+            "dis" : "8,730km 거리",
+            "date" : "5월 13일 ~ 20일"
+        },
+        {
+            "id" : 13,
+            "img" : "./img/items/item14.webp",
+            "loca" : "La Chapelle-Souëf, N....",
+            "price" : "₩1,348,122 / 박",
+            "dis" : "9,095km 거리",
+            "date" : "4월 11일 ~ 18일"
+        },
+        {
+            "id" : 14,
+            "img" : "./img/items/item15.webp",
+            "loca" : "Brix, Normandie",
+            "price" : "₩818,693 / 박",
+            "dis" : "9,089km 거리",
+            "date" : "4월 18일 ~ 25일"
+        }
+    ],
+
+    "slides": [
+        {
+            "img" : "./img/caresel/slide2.webp"
+        },
+        {
+            "img" : "./img/caresel/slide3.webp"
+        },
+        {
+            "img" : "./img/caresel/slide4.webp"
+        },
+        {
+            "img" : "./img/caresel/slide6.webp"
+        },
+        {
+            "img" : "./img/caresel/slide7.webp"
+        },
+        {
+            "img" : "./img/caresel/slide8.webp"
+        },
+        {
+            "img" : "./img/caresel/slide9.webp"
+        }
+    ],
+
+    "dlist":[
+        {
+            "img" : "./img/Dlist/list/list1.webp",
+            "sub" : "명동의 호텔 객실",
+            "title" : "3# 12 Bed Female Dorm[Myeong-dong, 明洞]",
+            "rooms": "최대 인원 1명 · 침실 1개 · 침대 1개 · 욕실 5개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기",
+            "score": "5.0",
+            "review": 3
+        },
+        {
+            "img" : "./img/Dlist/list/list2.webp",
+            "sub" : "마포구의 집 전체",
+            "title" : "#5 홍대입구역 도보 5분 조용하고 깔끔한 집",
+            "rooms": "최대 인원 2명 · 침실 1개 · 침대 1개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기 · 셀프 체크인",
+            "score": "4.84",
+            "review": 87
+        },
+        {
+            "img" : "./img/Dlist/list/list3.webp",
+            "sub" : "명동의 부티크 호텔의 객실",
+            "title" : "명동역5분, 서울타워 전망 루프탑이잇는곳. 싱글룸(개...",
+            "rooms": "최대 인원 1명 · 원룸 · 침대 1개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기",
+            "score": "5.0",
+            "review": 7
+        },
+        {
+            "img" : "./img/Dlist/list/list4.webp",
+            "sub" : "용산구의 집 전체",
+            "title" : "(OPEN SALE) #HOME BAR #이태원역 5분 #2 beds #...",
+            "rooms": "최대 인원 4명 · 침실 1개 · 침대 2개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기",
+            "score": "5.0",
+            "review": 9
+        },
+        {
+            "img" : "./img/Dlist/list/list5.webp",
+            "sub" : "마포구의 집 전체",
+            "title" : "편안하고 포근한 서교동, 마포구 숙소",
+            "rooms": "최대 인원 2명 · 침실 1개 · 침대 1개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기 · 셀프 체크인",
+            "score": "4.85",
+            "review": 27
+        },
+        {
+            "img" : "./img/Dlist/list/list1.webp",
+            "sub" : "명동의 호텔 객실",
+            "title" : "3# 12 Bed Female Dorm[Myeong-dong, 明洞]",
+            "rooms": "최대 인원 1명 · 침실 1개 · 침대 1개 · 욕실 5개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기",
+            "score": "5.0",
+            "review": 3
+        },
+        {
+            "img" : "./img/Dlist/list/list2.webp",
+            "sub" : "마포구의 집 전체",
+            "title" : "#5 홍대입구역 도보 5분 조용하고 깔끔한 집",
+            "rooms": "최대 인원 2명 · 침실 1개 · 침대 1개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기 · 셀프 체크인",
+            "score": "4.84",
+            "review": 87
+        },
+        {
+            "img" : "./img/Dlist/list/list3.webp",
+            "sub" : "명동의 부티크 호텔의 객실",
+            "title" : "명동역5분, 서울타워 전망 루프탑이잇는곳. 싱글룸(개...",
+            "rooms": "최대 인원 1명 · 원룸 · 침대 1개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기",
+            "score": "5.0",
+            "review": 7
+        },
+        {
+            "img" : "./img/Dlist/list/list4.webp",
+            "sub" : "용산구의 집 전체",
+            "title" : "(OPEN SALE) #HOME BAR #이태원역 5분 #2 beds #...",
+            "rooms": "최대 인원 4명 · 침실 1개 · 침대 2개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기",
+            "score": "5.0",
+            "review": 9
+        },
+        {
+            "img" : "./img/Dlist/list/list5.webp",
+            "sub" : "마포구의 집 전체",
+            "title" : "편안하고 포근한 서교동, 마포구 숙소",
+            "rooms": "최대 인원 2명 · 침실 1개 · 침대 1개 · 욕실 1개",
+            "filtered": "주방 · 무선 인터넷 · 세탁기 · 셀프 체크인",
+            "score": "4.85",
+            "review": 27
+        }
+        
+    ],
+
+    "dlistCaresel": [
+        
+        {
+            "img" : "./img/Dlist/caresel/caresel3.webp"
+        },
+        {
+            "img" : "./img/Dlist/caresel/caresel4.webp"
+        },
+        {
+            "img" : "./img/Dlist/caresel/caresel6.webp"
+        },
+        {
+            "img" : "./img/Dlist/caresel/caresel7.webp"
+        }
+     
+    ]
+
+}

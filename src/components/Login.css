@@ -1,0 +1,71 @@
+
+.nationAndNum{
+    display: flex;
+    flex-direction: column;
+}
+.nationSelect, .phoneNum{
+    height: 56px;
+    width: 100%;
+    font-size: 16px;
+    padding-left: 12px;
+}
+
+.nationSelect{
+    padding-top: 15px;
+    border-radius: 8px 8px 0 0;
+    border: 1px solid #dddddd;
+}
+
+.phoneNum{
+    border-radius: 0 0 8px 8px;
+    border: 1px solid #dddddd;
+}
+
+.nation{
+    position: relative;
+}
+
+.selectName{
+    position: absolute;
+    top: 5px;
+    left: 20px;
+    color: #717171;
+    font-size: 12px;
+}
+
+.login-notice{
+    margin-top: 8px;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+.login-continue{
+    background-color: #FF385C;
+    color: white;
+    text-align: center;
+    font-weight: 600;
+    font-size: 16px;
+    width: 100%;
+    height: 48px;
+    border-radius: 8px;
+    margin: 16px 0 24px 0;
+}
+
+.login-or{
+    display: flex;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.or-line{
+    width: 232px;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.or-text{
+    margin:0 16px;
+    font-size: 12px;
+    writing-mode: vertical-lr;
+    height: 16px;
+}

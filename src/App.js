@@ -1,23 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import Apage from './Apage';
+import Bpage from './Bpage';
+import Cpage from './Cpage';
+import Dpage from './Dpage';
+import Reservation from './Reservation';
+import ScrollToTop from './components/ScrollToTop';
+import Modal from 'react-modal';
+
+Modal.setAppElement('#root');
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      
+      <BrowserRouter>
+      <ScrollToTop />
+        <Routes>
+          <Route path="/" element={<Apage />}/>
+          <Route path="/bPage" element={<Bpage />}/>
+          <Route path="/cPage" element={<Cpage />}/>
+          <Route path="/reservation" element={<Reservation/>}/>
+          <Route path="/dPage" element={<Dpage/>}></Route>
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }

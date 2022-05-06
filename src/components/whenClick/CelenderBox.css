@@ -1,0 +1,54 @@
+.celender-box{
+    background-color: white;
+    color: black;
+    padding: 32px 100px;
+    z-index: 1;
+    border-radius: 32px;
+    width: 921px;
+    margin-top: 10px;
+}
+
+.celender-box__topBtns{
+    text-align: center;
+    background-color: #ebebeb;
+    margin: 8px 0 32px 0;
+    border-radius: 32px;
+    width: 170px;
+    margin: auto;
+    padding: 4px 0;
+
+}
+
+.celender-box__topBtns__left{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 5px 14px;
+    border-radius: 32px;
+    margin-right: 6px;
+
+}
+
+.celender-box__topBtns__right{
+    font-size: 14px;
+    font-weight: 600;
+    background-color: #ebebeb;
+    padding: 5px 14px;
+    border-radius: 32px;
+}
+
+.celender-box__topBtns__right:hover{
+    background-color: white;
+}
+
+
+
+.celender-box__bottomBtns{
+    padding-top: 32px;
+}
+
+.celender-box__bottomBtns>button{
+    padding: 4px 12px;
+    border-radius: 32px;
+    border: 1px solid #dddddd;
+    margin-right: 8px;
+}

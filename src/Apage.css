@@ -1,0 +1,347 @@
+
+*{
+    box-sizing: border-box;
+    grid-template-columns:1fr ;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background-color: white;
+}
+a{
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+button{
+    border: none;
+    cursor: pointer;
+    background-color: white;
+}
+
+input{
+    border: none;
+    outline: none;
+}
+
+ul{
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+
+
+
+/* Section Ukraine */
+.Ukraine{
+    background-color: black;
+    padding: 272px 80px 96px 80px;
+    
+}
+
+.uk-box{
+    background-color: #FF385C;
+    height: 480px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.uk-ment{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    text-align: center;
+    padding-bottom: 24px;
+    line-height: 54px;
+}
+
+.uk-btn{
+    background-color: transparent;
+    color: white;
+    font-size: 14px;
+    font-weight: 600;
+    border: 1px solid white;
+    border-radius: 10px;
+    padding: 8px 16px;
+}
+
+.uk-btn:hover{
+    border: 2px solid white;
+}
+
+/* section FlexibleSearch */
+.flexibleSearch{
+    background: linear-gradient(0deg, #FFFFFF 0%, #FFFFFF 50%, 
+    #000000 50%, #000000 100%);
+}
+
+.fs-box{
+    text-align: center;
+    width: 1530px;
+    height: 861px;
+    margin: 0 80px;
+    position: static;
+}
+.fs-box>img{
+    border-radius: 10px;
+    width: 1530px;
+    height: 861px;
+    
+}
+
+.fs-ment{
+    font-size: 48px;
+    font-weight: 600;
+    color: white;
+    padding-bottom: 24px;
+    position: relative;
+    bottom: 220px;
+
+}
+
+.fs-btn{
+    padding: 14px 32px;
+    border-radius: 30px;
+    transition: all 0.2s ease;
+    position: relative;
+    bottom: 220px;
+}
+
+.fs-btn:active{
+    transform: scale(0.9);
+    background-color: #dddddd;
+}
+
+.fs-btn>span{
+    background:radial-gradient(circle at center,#D70466 0%,#BD1E59 30%,#92174D 55%,#861453 72.5%,#6C0D63 90%,#6C0D63 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/* Section Idea */
+.idea{
+    margin: 96px 80px;
+}
+.idea-ment{
+    font-size: 42px;
+    font-weight: 600;
+    padding-bottom: 48px;
+}
+
+.cities{
+    display: flex;
+    justify-content: space-between;
+}
+
+.city{
+    height: 486.2px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+
+.city-img{
+    width: 364.447px;
+    border-radius: 10px 10px 0 0;
+}
+
+.city-name{
+    padding: 11px 0 6px 16px;
+    font-size: 35px;
+    font-weight: 600;
+    color: white;
+}
+
+.city-distance{
+    padding-left: 16px;
+    font-size: 20px;
+    color: white;
+
+}
+
+
+
+/* Section Experience */
+.experience{
+    margin: 0 80px;
+    padding-bottom: 96px;
+}
+
+.exp-ment{
+    font-size: 54px;
+    font-weight: 600;
+    padding-bottom: 48px;
+    line-height: 60px;
+    
+}
+
+.exps{
+    display: flex;
+    justify-content: space-between;
+    
+}
+.exps-travel{
+    background-image: url("https://a0.muscache.com/im/pictures/c2adcb16-6c3f-4041-86a1-afa9c303c500.jpg?im_w=1200");
+    
+}
+
+.exps-home{
+    background-image: url("https://a0.muscache.com/im/pictures/c1bdf53f-2a19-4529-aa9b-1b0e6bd8d0ee.jpg?im_w=1200");
+}
+
+.exps-travel, .exps-home{
+    background-size: cover;
+    padding: 80px;
+    width: 750px;
+    height: 857px;
+    border-radius: 10px;
+}
+
+.exps-ment{
+    color: white;
+    font-size: 53px;
+    font-weight: 600;
+    padding-bottom: 24px;
+    white-space:pre-line;
+}
+
+.exps-btn{
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+}
+
+
+/* Section SuperHost */
+.superHostSetion{
+    margin: 0 80px;
+    padding-bottom: 48px;
+
+}
+.host-bg{
+    background-image: url("https://a0.muscache.com/im/pictures/0528b0f7-4c0c-47bc-9786-d91454f531ba.jpg?im_w=1920");
+    background-size: cover;
+    height: 762px;
+    width: 1525px;
+    border-radius: 10px;
+    padding: 80px;
+    margin: auto;
+}
+
+.host-ment{
+    font-size: 95px;
+    font-weight: 600;
+    color: white;
+    line-height: 105px;
+    white-space: pre-line;
+}
+
+.host-btn{
+    padding: 14px 24px;
+    font-size: 16px;
+    font-weight: 600;
+    border-radius: 10px;
+    position: relative;
+    top: 160px;
+}
+
+/* Section Footer */
+.footer{
+    background-color: #F7F7F7;
+    padding: 0 80px;
+}
+
+.lists{
+    width: 364.67px;
+}
+.footer-list{
+    padding: 48px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.list-title{
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.list-content>li{
+    margin-top: 16px;
+    font-size: 14px;
+}
+
+.list-content>li:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-line{
+    width: 100%;
+    height: 1px;
+    background-color: #dddddd;
+}
+
+.footer-info{
+    padding: 24px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info-links>span, .info-links>a{
+    font-size: 14px;
+    color: #222222;
+    padding-right: 2px;
+}
+
+.info-links>a:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.info-right{
+    display: flex;
+    font-weight: 600;
+}
+.info-country{
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+}
+
+.country-lang, .country-exchange{
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    padding-right: 20px;
+}
+
+.country-lang>span, .country-exchange>span{
+    text-decoration: underline;
+    cursor: pointer;
+    padding-left: 7px;
+}
+
+.info-sns{
+    width: 186px;
+    display: flex;
+    justify-content: space-between;
+}
+.info-sns>a{
+    color: black;
+    font-size: 18px;
+}
+
+
+

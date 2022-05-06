@@ -1,0 +1,69 @@
+.boxA{
+    position: absolute;
+    right: 400px;
+    
+}
+
+.boxB{
+    position: absolute;
+    right: 165px;
+    top: 65px;
+}
+
+.headcount-box{
+    background-color: white;
+    /* width: 330px;
+    height: 343px; */
+    padding: 16px 32px;
+    border-radius: 32px;
+    border: 1px solid #dddddd;
+    z-index: 1;
+    margin-top: 12px;
+    
+
+}
+
+.headcount-box__age{
+    display: flex;
+    color: black;
+    justify-content: space-between;
+    padding: 16px 4px 16px 0;
+}
+
+.headcount-box__age__title{
+    font-weight: 600;
+}
+
+.headcount-box__age__sub{
+    font-size: 14px;
+    color: #717171;
+}
+
+.headcount-box__age__btn{
+    display: flex;
+    align-items: center;
+    width: 104px;
+    justify-content: space-between;
+}
+
+
+
+.headcount-box__age__minus,
+.headcount-box__age__plus{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid #717171;
+    width: 32px;
+    height: 32px;
+}
+
+
+
+.headcount-box__notice{
+    font-size: 14px;
+    color: #717171;
+    margin: 8px 0px 16px 0;
+    white-space: pre-line;
+}
