@@ -7,22 +7,20 @@ function UserClick(props){
     const [modalOpen, setModalOpen] = useState(false);
     const [closeUser, setCloseUser] = useState(false);
 
-  const openModal = () => {
+    const openModal = () => {
     setModalOpen(true);
     setCloseUser(!closeUser);
-    props.clickUser();
-  };
-  const closeModal = () => {
+    };
+    const closeModal = () => {
     setModalOpen(false);
-  };
+    };
 
- 
     return(
     <>
         <UserClickStyle closeUser={closeUser} margin={props.margin}>
             <div className="user-click">
                 <div className="user-click__item" style={{fontWeight:"600"}}>회원가입</div>
-                <div className="user-click__item" onClick={()=>{openModal}}>로그인</div>
+                <div className="user-click__item" onClick={openModal}>로그인</div>
                 <div className="underline"></div>
                 <div className="user-click__item">숙소 호스트 되기</div>
                 <div className="user-click__item">체험 호스트 되기</div>

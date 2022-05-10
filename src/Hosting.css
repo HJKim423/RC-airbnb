@@ -1,0 +1,227 @@
+
+/* SECTION TOP */
+
+.section-top{
+    background-color: black;
+    height: 715.333px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+.section-top-icon{
+    color:white;
+    width:64px;
+    height: 64px;
+    position:absolute;
+    top: 46px;
+    left: 46px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-top-icon:hover{
+    border-radius: 50%;
+    background-color: #222222;
+}
+
+.section-top-icon>svg{
+    width: 32px;
+}
+.section-top__left{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.section-top-content{
+    text-align: center;
+        
+}
+
+.section-top-content__text{
+    font-size: 64px;
+    font-weight: 600;
+    color: white;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: 52px;
+}
+
+.section-top-content__btn{
+    padding: 14px 24px;
+    background-color: #ff385c;
+    border-radius: 8px;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+}
+
+.section-top__video{
+    overflow: hidden;
+}
+
+.section-income{
+    margin-top: 96px;
+}
+
+.section-title{
+    font-size: 56px;
+    font-weight: 600;
+    white-space: pre-line;
+    text-align: center;
+    margin: 0 24px 40px 24px;
+}
+
+/* IMCOME */
+.section-income-boxes{
+    display: flex;
+    justify-content: center;
+    margin: 0 24px 48px 24px;
+}
+
+.section-income-box{
+    background-color: #f7f7f7;
+    padding: 20px 24px;
+    margin-right: 16px;
+    border-radius: 12px;
+    width: 324px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.income-box-title{
+    color: #717171;
+    font-size: 14px;
+}
+
+.income-box-content{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.income-box-content>span{
+    font-size: 22px;
+}
+
+.section-income__map-title{
+    font-size: 22px;
+    font-weight: 600;
+    margin: 0 24px 24px 24px;
+    text-align: center;
+}
+
+.section-income__map{
+    width: 100%;
+    height: 546px;
+}
+
+.section-income__map-text{
+    text-align: center;
+    font-size: 14px;
+    font-weight: 600;
+    margin-top: 24px;
+    text-decoration: underline;
+}
+
+
+/* CARESEL */
+.section-caresel{
+    margin: 96px 48px 0 48px;
+    overflow: hidden;
+}
+
+
+/* SUPER HOST */
+.section-superHost{
+    background-image: url("../public/img/hosting/superhost.webp");
+    margin: 96px 48px 0 48px;
+    width: 1576px;
+    height: 886px;
+    background-size: cover;
+    border-radius: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.section-superHost-text{
+    font-size: 56px;
+    font-weight: 600;
+    color: white;
+    white-space: pre-line;
+    text-align: center;
+    line-height: 64px;
+}
+
+.section-btn{
+    padding: 13px 23px;
+    background-color: white;
+    border-radius: 8px;
+    color: black;
+    font-weight: 600;
+    font-size: 16px;
+    margin-top: 60px;
+    border: 1px solid black;
+}
+
+/* AIR COVER */
+.section-airCover{
+    margin: 96px 48px;
+    background-color: #f7f7f7;
+    display: flex;
+    border-radius: 12px;
+}
+
+.section-airCover-content{
+    padding:0 32px 0 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    width: 50%;
+}
+
+.section-airCover-content>img{
+    width:380px;
+}
+
+.airCover-content-text{
+    font-size: 32px;
+    white-space: pre-line;
+    margin: 40px 40px 0 0;
+    line-height: 36px;
+    font-weight: 400;
+}
+
+.section-airCover-img{
+    width: 50%;
+    height: 100%;
+}
+.section-airCover-img>img{
+    object-fit: contain;
+    height: 750px;
+    width: 100%;
+}
+
+.section-bottom-content__text{
+    font-size: 48px;
+    line-height: 56px;
+    font-weight: 600;
+    color: white;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.section-bottom-content__text__text{
+    font-size: 18px;
+    line-height: 26px;
+    color: white;
+    white-space: pre-line;
+    text-align: center;
+    margin-bottom: 48px;
+}

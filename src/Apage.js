@@ -5,6 +5,7 @@ import {createStore} from "redux";
 import './Apage.css';
 import Header1Black from "./components/Headers/Header1-black";
 import Footer from './components/Footers/Footer';
+import Ukraine from "./components/Ukraine";
 
 
 function Apage(){
@@ -20,14 +21,8 @@ function Apage(){
 <body>  
         
         <Header1Black />
-
-    <section className="Ukraine">
-        <div className="uk-box">
-            <div className="uk-ment">10만 명에 달하는 우크라이나 피란민에게 임시<br/>
-                숙소를 제공해주세요</div>
-            <button className="uk-btn">자세히 알아보기</button>
-        </div>
-    </section>
+        <Ukraine/>
+    
 
     <section className="flexibleSearch">
         <div className="fs-box">

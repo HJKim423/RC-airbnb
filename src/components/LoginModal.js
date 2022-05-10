@@ -10,12 +10,16 @@ import { ReactComponent as X } from '../svg/x.svg';
 import { useState } from 'react';
 
 import './LoginModal.css';
+import EmailLogin from './EmailLogin';
+
+import Password from './Password';
 
 
 function LoginModal(props){
-    
-        const style = {
-            
+        const [text,setText] = useState("이메일로 로그인하기");
+        const [email,setEmail] = useState(false);
+        const [openPassword, setOpenPassword] = useState(false);
+        const style = {          
             overlay: {
                 position: "fixed",
                 top: 0,
@@ -29,23 +33,31 @@ function LoginModal(props){
             content: {
                 display: "flex",
                 flexDirection: "column",
-                background: "white",
+                background: "transparent",
                 overflow: "auto",
                 top: "42vh",
                 margin:"auto",
                 bottom: "42vh",
                 WebkitOverflowScrolling: "touch",
-                borderRadius: "12px",
                 outline: "none",
                 zIndex: 10,
-                width: "568px",
-                height: "682px",
                 padding: 0,
                 transition: "all 0.5s ease",
+                width:"568px",
+                height: "682px",
+                border:"none",
+            
             },
         };
 
+        const getPassword = (e) => {
+            setOpenPassword(e);
+        }
         
+        const goEmailLogin= () =>{
+            setText("전화번호로 로그인하기");
+            setEmail(!email);
+        }
 
   return (
     <>
@@ -56,7 +68,7 @@ function LoginModal(props){
 			ariaHideApp={false}
             closeTimeoutMS={500}
     	>
-            <ModalStyle>
+            <ModalStyle openPassword={openPassword}>
     		<div className='modal-header'>
                 <button className='modal-close' onClick={props.isClose}><X/></button>
                 <div className='modal-header__title'>로그인 또는 회원가입</div>
@@ -64,7 +76,8 @@ function LoginModal(props){
             <div className='underline'></div>
             <div className='modal-login'>
                 <div className='modal-login__title'>에어비앤비에 오신 것을 환영합니다.</div>
-                <Login />
+                <LoginStyle email={email}><Login /></LoginStyle>
+                <EmailLoginStyle email={email}><EmailLogin getPassword={getPassword}/></EmailLoginStyle>
                 <button className="reservation-left__login__email">
                     <div className="email-icon"><FB/></div>
                     <div className="email-text">페이스북으로 로그인하기</div>
@@ -77,20 +90,32 @@ function LoginModal(props){
                     <div className="email-icon"><Apple/></div>
                     <div className="email-text">애플로 로그인하기</div>
                 </button>
-                <button className="reservation-left__login__email" style={{marginBottom:"0"}}>
+                <button className="reservation-left__login__email" style={{marginBottom:"0"}} onClick={goEmailLogin}>
                     <div className="email-icon"><Mail/></div>
-                    <div className="email-text">이메일로 로그인하기</div>
+                    <div className="email-text">{text}</div>
                 </button>
             </div>
             </ModalStyle>
     	</Modal>
         
+        {openPassword && <Password openPassword={openPassword} isClose={props.isClose}/>}
     </>
   );
     
 }
 
+const LoginStyle = styled.div`
+display: ${(props) => (props.email? "none" : "block")};
+`;
+
+const EmailLoginStyle = styled.div`
+display:${(props) => (props.email? "block" : "none")};
+`;
+
 const ModalStyle = styled.div`
+display: ${(props) => (props.openPassword ? "none" : "block")};
+background-color: white;
+border-radius:12px;
 
 .modal-header{
     display:flex;

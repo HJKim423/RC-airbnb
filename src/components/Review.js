@@ -33,13 +33,13 @@ function Review(){
 
     const [reviews, setReviews] = useState([
         {
-            img:'./img/reviewer/reviewer1.webp',
+            img:'../img/reviewer/reviewer1.webp',
             name : 'Dane',
             date : '2022년 3월',
             content : 'A beautiful castle for a nights stay.'
         },
         {
-            img:'./img/reviewer/reviewer2.webp',
+            img:'../img/reviewer/reviewer2.webp',
             name : 'Thorsten',
             date : '2022년 3월',
             content : `Absolut perfekt! War alles genauso wie ich’s mir vorgestellt 
@@ -47,20 +47,20 @@ function Review(){
             Frühstück war perfekt 👌 und echt lecker! Wir kommen...`
         },
         {
-            img:'./img/reviewer/reviewer3.webp',
+            img:'../img/reviewer/reviewer3.webp',
             name : 'Lauren',
             date : '2022년 3월',
             content : `We really enjoyed the experience of staying in a castle. It’s  
             and beautiful scenery. The rooms are very big and we really...`
         },
         {
-            img:'./img/reviewer/reviewer4.png',
+            img:'../img/reviewer/reviewer4.png',
             name : 'Tobias',
             date : '2022년 3월',
             content : 'Absolut zu empfehlen'
         },
         {
-            img:'./img/reviewer/reviewer5.webp',
+            img:'../img/reviewer/reviewer5.webp',
             name : 'Marijn',
             date : '2022년 3월',
             content : `It was awesome to stay in this castle amclassNamest vineyards. We had
@@ -68,7 +68,7 @@ function Review(){
             lovely wine and enjoy the sun. Benedikt was nice,... `
         },
         {
-            img:'./img/reviewer/reviewer6.webp',
+            img:'../img/reviewer/reviewer6.webp',
             name : 'Vivian',
             date : '2022년 3월',
             content : `Sehr schönes Schloss mit besonderen Zimmern. Die zwei

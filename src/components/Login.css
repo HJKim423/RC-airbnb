@@ -1,4 +1,29 @@
 
+/* EmailLogin */
+.makeStyles-submit-25{
+    background-color: #C13515 !important;
+}
+.MuiFormLabel-root.Mui-error{
+    color:#C13515 !important;
+    font-weight: 600;
+}
+.MuiFormHelperText-root.Mui-error {
+    color: #C13515 !important;
+}
+.MuiInputBase-root{
+    color: #dddddd !important;
+}
+.MuiInputBase-input{
+    color: black !important;
+}
+.makeStyles-submit-21:hover{
+    background-color: #FF385C !important;
+}
+
+
+
+
+
 .nationAndNum{
     display: flex;
     flex-direction: column;

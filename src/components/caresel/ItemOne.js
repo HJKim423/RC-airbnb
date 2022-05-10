@@ -50,7 +50,7 @@ function ItemOne(props){
                 onMouseLeave={()=> {setShowBtn(false)}}>
 
                 <div className="section__item__img">
-                    <Caresel direction={currentSlide} img={props.item.img}/>     
+                    <Caresel direction={currentSlide} img={props.item.img} link={props.link}/>     
                 
                     <div className="item-heart"><Heart /></div>
                     <button className="item-prev" 
@@ -70,8 +70,8 @@ function ItemOne(props){
                         <span className="count__dot"></span>
                     </div>
                 </div>
-                
-                    <Link to='/cPage' className="section__item__text">
+                <Link to={`/cPage/${props.link}`}>
+                    <div className="section__item__text">
                         <div className="item-locationAndPride">
                             <div className="item-location">{props.item.loca}</div>
                             <div className="item-price">{props.item.price}</div>
@@ -80,7 +80,9 @@ function ItemOne(props){
                             <div className="item-distance">{props.item.dis}</div>
                             <div className="item-date">{props.item.date}</div>
                         </div>
-                    </Link>
+                    </div>
+                </Link>
+                    
             </div>
         ) : (
             <div className="section__item">
@@ -90,7 +92,7 @@ function ItemOne(props){
                     <div className="section__item__text">
                         <div className="item-locationAndPride">
                             <div style={{
-                                width:"100%",
+                                width:"60%",
                                 height:"22px",
                                 backgroundColor:"#dddddd",
                                 borderRadius:"20px",
@@ -99,7 +101,7 @@ function ItemOne(props){
                         </div>
                         <div className="item-distanceAndDate">
                         <div style={{
-                                width:"100%",
+                                width:"40%",
                                 height:"20px",
                                 backgroundColor:"#dddddd",
                                 borderRadius:"20px"

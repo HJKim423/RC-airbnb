@@ -1,4 +1,5 @@
 import { useState, useEffect, useRef} from "react";
+import { useParams } from 'react-router-dom';
 
 import Header3 from './components/Headers/Header3';
 import NavbarC from "./components/Headers/NavbarC";
@@ -31,13 +32,16 @@ import { ReactComponent as Certify } from './svg/certify.svg';
 import { Link } from "react-router-dom";
 
 
+import dummy from './db/data.json';
+
 function Cpage(){
     const [offset, setOffset] = useState(0);
-
     const main = useRef();
     const conv = useRef();
     const review = useRef();
     const place = useRef();
+
+    const id = useParams().id;
 
     useEffect(() => {
         window.onscroll = () => {
@@ -45,7 +49,7 @@ function Cpage(){
         }
     }, []);
 
-
+    
     return(
         
     <body>
@@ -63,7 +67,7 @@ function Cpage(){
 
     <section className="main" ref={main}>
         <div className="main__info">
-            <div className="info__name">Torzimmer auf Schloss Arenfels</div>
+            <div className="info__name">{dummy.items[id].loca}</div>
             <div className="info__etc">
                 <div className="etc__reviewAndPlace">
                     <Grade />
@@ -89,13 +93,13 @@ function Cpage(){
         </div>
         <div className="main__img">
             <div className="img__big">
-                <img src="./img/main/imgBig.webp" />
+                <img src={dummy.items[id].img} />
             </div>
             <div className="img__small">
-            <img src="./img/main/imgSmall1.webp" />
-            <img src="./img/main/imgSmall2.webp" />
-            <img src="./img/main/imgSmall3.webp" />
-            <img src="./img/main/imgSmall4.webp" />
+            <img src="../img/main/imgSmall1.webp" />
+            <img src="../img/main/imgSmall2.webp" />
+            <img src="../img/main/imgSmall3.webp" />
+            <img src="../img/main/imgSmall4.webp" />
             </div>
             
         </div>
@@ -114,7 +118,7 @@ function Cpage(){
                         <div className="title__name__rooms">최대 인원 2명 · 침실 1개 · 침대 1개 · 욕실 1개</div>
                     </div>
                     <div className="title__img">
-                        <img src='./img/host.webp'></img>
+                        <img src='../img/host.webp'></img>
                         <div className="title__img__medal"><Medal /></div>
                     </div>
                 </div>
@@ -268,7 +272,7 @@ Der Ortskern ist fußläufig innerhalb von 15 Minuten erreichbar.
     <section className="placeSection" ref={place}>
         <div className="place__title">호스팅 지역</div>
         <div className="place__map">
-            <img src="img/map.png"/>
+            <img src="../img/map.png"/>
         </div>
         <div className="place__location">Bad Hönningen, Rheinland-Pfalz, 독일</div>
         <div className="place__content">Schloss Arenfels liegt mitten in den Weinbergen am Rande Bad Hönningens.
@@ -282,7 +286,7 @@ Es ist direkt am Rheinsteig gelegen und somit bietet es die ideale Ausgangslage 
     <section className="host">
         <div className="host__host">
             <div className="host__img">
-                <img src='./img/host.webp'></img>
+                <img src='../img/host.webp'></img>
                         <div className="host__img__medal">
                             <Medal />
                         </div>

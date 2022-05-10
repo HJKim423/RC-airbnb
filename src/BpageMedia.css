@@ -170,10 +170,14 @@
 
     .nav{
         width: 2440px;
-        overflow-x:hidden;
+        overflow-x:scroll;
         padding:0 24px;
         border-bottom: 1px solid #dddddd;
         top:70px;
+    }
+
+    .nav::-webkit-scrollbar {
+        display: none; 
     }
  
     .menu-item:nth-last-child(-n+10){

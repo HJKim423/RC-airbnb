@@ -12,7 +12,6 @@ import { ReactComponent as Bars } from '../../svg/bars.svg';
 import { ReactComponent as LogoWhite } from '../../svg/logo-white.svg';
 
 
-
 function Header1Black(){
     const [offset, setOffset] = useState(0);
     const [isScroll, setIsScroll] = useState(false);
@@ -41,7 +40,6 @@ function Header1Black(){
     const clickUser=()=>{
         setShowUserClick(!showUserClick)
     }
-    console.log(showUserClick);
 
 
     return (
@@ -68,7 +66,7 @@ function Header1Black(){
 
 
             <div className="user-menu">
-                <div className="to-be-host"><Link to="/">호스트 되기</Link></div>
+                <div className="to-be-host"><Link to="/hosting">호스트 되기</Link></div>
                 <div className="user-lang">
                     <Globe />
                 </div>

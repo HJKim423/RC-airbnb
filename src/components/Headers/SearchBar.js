@@ -8,7 +8,7 @@ import LocBoxSeoul from "../whenClick/LocBoxSeoul";
 import styled from "styled-components";
 
 
-
+import { useSelector } from "react-redux";
 function SearchBar(props){
     const [countHide, setCountHide] = useState(false);
     const [celHide , setCelHide] = useState(false);
@@ -40,6 +40,7 @@ function SearchBar(props){
     //     };
     // }, [myMenuRef]);
 
+    const { guest } = useSelector((state) => state.userReducer);
     
     return(
         <>
@@ -119,7 +120,7 @@ function SearchBar(props){
         <div className="right-line"></div>
         <div className="search__headcount" onClick={e=> setCountHide(!countHide)} style={{backgroundColor:"white", borderRadius:"32px 0 0 32px", boxShadow: "rgba(100, 100, 111, 0.2) 0px 7px 29px 20px"}}>
             <div className="search__text">인원</div>
-            <div className="headcount__text">게스트 추가</div>
+            <div className="headcount__text">{guest}</div>
         </div>
         <div style={{backgroundColor:"white", borderRadius:"0 32px 32px 0", display: "flex"}}>
         <button className="search__btn" style={{width:"92px", borderRadius:"32px"}}>

@@ -6,6 +6,7 @@ import { ReactComponent as User } from '../../svg/user.svg';
 import { ReactComponent as Bars } from '../../svg/bars.svg';
 
 import UserClick from "../UserClick";
+import { Link } from "react-router-dom";
 
 function HeaderUser(props){
 
@@ -14,7 +15,7 @@ function HeaderUser(props){
     return(
         <HeaderUserStyle>
             <div className="user-menu2">
-                <div className="to-be-host2">호스트 되기</div>
+                <div className="to-be-host2"><Link to='/hositng'>호스트 되기</Link></div>
                 <div className="user-lang2"><Globe /></div>
                 <button class="user2" onClick={e => setShowUserClick(!showUserClick)}>
                     <div className="user-bars2"><Bars /></div>
