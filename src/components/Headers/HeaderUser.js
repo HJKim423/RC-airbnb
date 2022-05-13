@@ -8,10 +8,13 @@ import { ReactComponent as Bars } from '../../svg/bars.svg';
 import UserClick from "../UserClick";
 import { Link } from "react-router-dom";
 
+import {useSelector} from "react-redux";
+
 function HeaderUser(props){
 
     
     const [showUserClick, setShowUserClick] = useState(false);
+    const { isLogin } = useSelector((state) => state.LoginReducer);
     return(
         <HeaderUserStyle>
             <div className="user-menu2">
@@ -19,7 +22,11 @@ function HeaderUser(props){
                 <div className="user-lang2"><Globe /></div>
                 <button class="user2" onClick={e => setShowUserClick(!showUserClick)}>
                     <div className="user-bars2"><Bars /></div>
-                    <div className="user-img2"><User /></div>
+                    {/* <div className="user-img2"><User /></div> */}
+                    <UserStyle isLogin={isLogin}>
+                        <div><User /></div>
+                        <img src="../img/user.png" style={{width:"30px", borderRadius:"50%"}}></img>
+                    </UserStyle>
                 </button>
                 {showUserClick && <UserClick showUserClick={setShowUserClick} margin={props.margin}/>}
             </div>
@@ -28,6 +35,21 @@ function HeaderUser(props){
         
     )
 }
+
+const UserStyle = styled.div`
+color: #717171;
+font-size: 30px;
+margin-left: 10px;
+width: 30px;
+
+div{
+    display: ${(props) => (props.isLogin ? "none" : "block")};
+}
+
+img{
+    display: ${(props) => (props.isLogin ? "block" : "none")};
+}
+`;
 
 const HeaderUserStyle = styled.div`
 .user-menu2{

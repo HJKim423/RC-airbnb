@@ -8,9 +8,26 @@ import ScrollToTop from './components/ScrollToTop';
 import Modal from 'react-modal';
 import Hosting from './Hosting';
 
+import {useEffect} from "react";
+import { useDispatch } from "react-redux";
+import { LoginAction } from "./reducer/LoginReducer";
+
 Modal.setAppElement('#root');
 
 function App() {
+  const dispatch = useDispatch();
+  useEffect(()=>{
+    const savedPassword= localStorage.getItem("password");
+    
+    if(savedPassword !== null){
+      const isLogin = true;
+      dispatch(LoginAction(
+        {isLogin},
+        ),
+    );
+    }
+}, []);
+
   return (
     <div className="App">
       

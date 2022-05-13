@@ -34,8 +34,8 @@ function EmailLogin(props){
 
 
     const onSubmit = (data) => {
-        // alert(JSON.stringify(data));
         loginData.push(data);
+        localStorage.setItem('email', JSON.stringify(data.email));
         getPass(true);
     };
 

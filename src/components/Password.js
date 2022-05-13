@@ -6,6 +6,10 @@ import { useForm, Controller } from "react-hook-form";
 import { makeStyles } from '@material-ui/core/styles';
 
 import { ReactComponent as X } from '../svg/x.svg';
+import { useEffect, useState } from 'react';
+
+import { useDispatch } from "react-redux";
+import { LoginAction } from "../reducer/LoginReducer";
 
 
 const useStyles = makeStyles((theme) => ({
@@ -50,13 +54,24 @@ function Password(props){
             height: "404px"
         },
     };
+    const [isLogin, setIsLogin] = useState(false);
 
     const { control, handleSubmit } = useForm();
     const onSubmit = (data) => {
-        alert(JSON.stringify(data));
-        // loginData.push(data);
-        props.isClose();
-    };
+            localStorage.setItem('password', JSON.stringify(data.password));
+            props.isClose();
+            handleLogin();
+        }
+        
+
+        //로그인 됐을때 화면 바뀌게 하기 위해 state 리덕스로 보냄
+        const dispatch = useDispatch();
+        const handleLogin = () => {
+            dispatch(LoginAction(
+                {isLogin},
+                ),
+            );
+        }
 
    
     const classes = useStyles();

@@ -11,11 +11,14 @@ import { ReactComponent as User } from '../../svg/user.svg';
 import { ReactComponent as Bars } from '../../svg/bars.svg';
 import { ReactComponent as LogoWhite } from '../../svg/logo-white.svg';
 
+import {useSelector} from "react-redux";
+
 
 function Header1Black(){
     const [offset, setOffset] = useState(0);
     const [isScroll, setIsScroll] = useState(false);
     const [showUserClick, setShowUserClick] = useState(false);
+    const { isLogin } = useSelector((state) => state.LoginReducer);
 
     useEffect(() => {
         window.onscroll = () => {
@@ -74,9 +77,10 @@ function Header1Black(){
                     <div className="user-bars">
                         <Bars />
                     </div>
-                    <div className="user-img">
-                        <User />
-                    </div>
+                    <UserStyle isLogin={isLogin}>
+                        <div><User /></div>
+                        <img src="./img/user.png" style={{width:"30px", borderRadius:"50%"}}></img>
+                    </UserStyle>
                 </button>
                 {showUserClick && <UserClick clickUser={clickUser}
                 margin={isScroll?"0px 80px 0 0":"50px 80px 0 0"}/>}
@@ -93,6 +97,21 @@ function Header1Black(){
         </HeaderStyle>
     )
 }
+
+const UserStyle = styled.div`
+color: #717171;
+font-size: 30px;
+margin-left: 10px;
+width: 30px;
+
+div{
+    display: ${(props) => (props.isLogin ? "none" : "block")};
+}
+
+img{
+    display: ${(props) => (props.isLogin ? "block" : "none")};
+}
+`;
 
 const HeaderStyle = styled.div`
 .header{
@@ -226,10 +245,7 @@ const HeaderStyle = styled.div`
 }
 
 .user-img{
-    color: #717171;
-    font-size: 30px;
-    margin-left: 10px;
-    width: 30px;
+    
 }
 
 `;
