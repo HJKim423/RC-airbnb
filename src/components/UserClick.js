@@ -17,6 +17,11 @@ function UserClick(props){
     setModalOpen(false);
     };
 
+    const logout = () => {
+        localStorage.clear();
+        window.location.reload(); //페이지 새로고침
+    }
+
     return(
     <>
         <UserClickStyle closeUser={closeUser} margin={props.margin} isLogin={isLogin}>
@@ -42,7 +47,7 @@ function UserClick(props){
                 <div className="user-click__item">계정</div>
                 <div className="underline"></div>
                 <div className="user-click__item">도움말</div>
-                <div className="user-click__item">로그아웃</div>
+                <div className="user-click__item" onClick={logout}>로그아웃</div>
             </div>
         </LoginUserClickStyle>
         

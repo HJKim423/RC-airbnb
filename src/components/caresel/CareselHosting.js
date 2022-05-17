@@ -10,6 +10,7 @@ import { ReactComponent as Left } from '../../svg/hosting/left.svg';
 const TOTAL_SLIDES = dummy.hostingCaresel.length;
 function CareselHosting(props){
     const [currentSlide, setCurrentSlide] = useState(0);
+    const [current, setCurrent] = useState(false);
 
     function handlePrev(direction){
         if(currentSlide === -1) return;
@@ -22,17 +23,22 @@ function CareselHosting(props){
     }
     const direction = currentSlide * 538.75;
     console.log(currentSlide);
+
+
     return(
         <>
         <CareselHostingstyle direction={direction}>
                 {dummy.hostingCaresel.map((slide,index)=>(
                     <div key={index} className="caresel-item">
                         <img className='caresel-item__img' src={slide.img}></img>
-                        <div className='caresel-item-content'>
-                            <div className='caresel-item__text'>{slide.text}</div>
-                            <img className='caresel-item__name' src={slide.name}></img>
-                            <div className='caresel-item__loca'>{slide.loca}</div>
-                        </div>
+                        <ContainerStyle current={slide.current} currentSlide={currentSlide}>
+                            <div className='caresel-item-content'>
+                                <div className='caresel-item__text'>{slide.text}</div>
+                                <img className='caresel-item__name' src={slide.name}></img>
+                                <div className='caresel-item__loca'>{slide.loca}</div>
+                            </div>
+                        </ContainerStyle>
+                        
                         
                     </div>
                 ))}                
@@ -50,6 +56,14 @@ function CareselHosting(props){
         
     )
 }
+
+const ContainerStyle = styled.div`
+.caresel-item-content{
+    transition: all 0.5s ease;
+    opacity: ${props => (props.current === props.currentSlide ? 1: 0)};
+}
+
+`
 
 const BtnStyle = styled.div`
 display:flex;
@@ -71,7 +85,7 @@ button{
 `;
 
 const CareselHostingstyle = styled.div`
-transition: all 0.3s ease;
+transition: all 0.5s ease;
 width:1279px;
 display: flex;
 transform: translateX(${(props) =>(-props.direction)}px);
@@ -80,8 +94,9 @@ transform: translateX(${(props) =>(-props.direction)}px);
 .caresel-item{
     height:770px;
     padding-right:18px;
-    
 }
+
+
 
 
 .caresel-item__img{

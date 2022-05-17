@@ -11,7 +11,9 @@ function Login(){
     const [color, setColor] = useState("black");
     const [border, setBorder] = useState("1px solid yellow");
 
+    
     useEffect(() => {
+        console.log(valid);
             if(submit && password.length === 0){
                 setValid(`전화번호는 필수 항목입니다.`);
                 setColor("#c13515");
@@ -46,7 +48,7 @@ function Login(){
             className="phoneNum" placeholder="전화번호" style={{border:`${border}`}}></input>
         </div>
         <div className="login-notice" style={{color:`${color}`}}>{valid}</div>
-        <button className="login-continue" onClick={()=> {setSubmit(true)}}>계속</button>
+        <button className="login-continue" onClick={()=> {setSubmit(!submit)}}>계속</button>
         <div className="login-or">
             <div className="or-line"></div>
             <div className="or-text">또는</div>

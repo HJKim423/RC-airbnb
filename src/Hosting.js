@@ -7,9 +7,36 @@ import styled from "styled-components";
 import CareselHosting from './components/caresel/CareselHosting';
 
 import { ReactComponent as LogoWhite } from './svg/logo-white.svg';
+import { ReactComponent as Play } from './svg/play.svg';
+import { ReactComponent as Pause } from './svg/pause.svg';
+
+
 import { Link } from 'react-router-dom';
+import { useRef, useState } from 'react';
 
 function Hosting(){
+    const [play, setPlay] = useState(false);
+    const [play2, setPlay2] = useState(false);
+
+    const videoRef = useRef();
+    const videoRef2 = useRef();
+    const playVideo = () =>{
+        videoRef.current.play();
+        setPlay(!play);
+    }
+    const pauseVideo = () =>{
+        videoRef.current.pause();
+        setPlay(!play);
+    }
+
+    const playVideo2 = () =>{
+        videoRef2.current.play();
+        setPlay2(!play2);
+    }
+    const pauseVideo2 = () =>{
+        videoRef2.current.pause();
+        setPlay2(!play2);
+    }
 
     return(
         <>
@@ -27,9 +54,23 @@ function Hosting(){
                 </div>
             </div>
             <div className='section-top__video'>
-                <video autoPlay muted width="100%" height="">
+                <video autoPlay muted width="100%" height="" ref={videoRef}>
                     <source src='/hosting1.webm' type='video/mp4'></source>
                 </video>
+                <PlayStyle play={play}>
+                    <button className='playBtn' onClick={playVideo}>
+                    <Play/>
+                    </button>
+                </PlayStyle>
+                <PauseStyle play={play}>
+                    <button className='pauseBtn' onClick={pauseVideo}>
+                    <Pause/>
+                    </button>
+                </PauseStyle>
+                <PlayNamesStyle>
+                    <img src='/img/hosting/videoname1.webp'></img>
+                    <div>필라델피아의 호스트</div>
+                </PlayNamesStyle>
             </div>
         </section>
         <section className='section-income'>
@@ -60,7 +101,8 @@ function Hosting(){
                 언제 어디서든{"\n"}
                 호스팅하실 수 있습니다
             </div>
-            <CareselHosting/>
+                <CareselHosting/>
+            
         </section>
         <UkrStyle><Ukraine/></UkrStyle>
         <section className='section-superHost'>
@@ -86,9 +128,19 @@ function Hosting(){
         </section>
         <section className="section-top">
             <div className='section-top__video'>
-                <video autoPlay muted width="100%" height="">
+                <video autoPlay muted width="100%" height="" ref={videoRef2}>
                     <source src='/hosting2.webm' type='video/mp4'></source>
                 </video>
+                <PlayStyle play={play2}>
+                    <button className='playBtn2' onClick={playVideo2}>
+                    <Play/>
+                    </button>
+                </PlayStyle>
+                <PauseStyle play={play2}>
+                    <button className='pauseBtn2' onClick={pauseVideo2}>
+                    <Pause/>
+                    </button>
+                </PauseStyle>
             </div>
             <div className='section-top__left'>
                 <div className='section-top-content'>
@@ -107,6 +159,34 @@ function Hosting(){
         </>
     )
 }
+
+
+const PlayNamesStyle =styled.div`
+position: absolute;
+top: 510px;
+right:590px;
+
+img{
+    height:56px;
+    margin-bottom:16px;
+}
+
+div{
+    font-size:20px;
+    color:white;
+}
+`;
+
+const PlayStyle = styled.div`
+display: ${(props) => (props.play ? "flex" : "none")};
+
+`;
+
+const PauseStyle = styled.div`
+display: ${(props) => (props.play ? "none" : "flex")};
+
+`;
+
 const UkrStyle = styled.div`
 .Ukraine{
     background-color:white;

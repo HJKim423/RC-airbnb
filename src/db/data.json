@@ -262,19 +262,22 @@
             "name" : "./img/hosting/name1.jpg",
             "img" : "./img/hosting/caresel1.jpg",
             "text" : "스튜디오 호스팅 덕에 새로운 삶을 사는 느낌이에요. 좋은 인연과 잊을 수 없는 추억은 덤이죠.",
-            "loca" : "밀라노의 호스트"
+            "loca" : "밀라노의 호스트",
+            "current":-1
         },
         {
             "name" : "./img/hosting/name2.jpg",
             "img" : "./img/hosting/caresel2.jpg",
             "text" : "집을 숙소로 호스팅하면서 자영업자가 되어 경제적 자유에 한 걸음 더 가까워질 수 있었어요.",
-            "loca" : "애틀랜타의 호스트"
+            "loca" : "애틀랜타의 호스트",
+            "current":0
         },
         {
             "name" : "./img/hosting/name3.jpg",
             "img" : "./img/hosting/caresel3.jpg",
             "text" : "파스타 만들기 체험을 호스팅함으로써 문화 보존에 기여할 수 있습니다.",
-            "loca" : "팔롬바라사비나의 호스트"
+            "loca" : "팔롬바라사비나의 호스트",
+            "current":1
             
         },
         
@@ -282,20 +285,23 @@
             "name" : "./img/hosting/name5.jpg",
             "img" : "./img/hosting/caresel5.jpg",
             "text" : "에어비앤비 덕분에 제가 제일 좋아하는 일을 업으로 삼을 수 있게 되었어요. 바로 집에서 게스트를 맞이하고 돌보는 일이죠.",
-            "loca" : "치앙마이의 호스트"
+            "loca" : "치앙마이의 호스트",
+            "current":2
             
         },
         {
             "name" : "./img/hosting/name6.jpg",
             "img" : "./img/hosting/caresel6.jpg",
             "text" : "베두인 텐트 호스팅을 통해 세계 각지에서 온 분들을 만날 수 있었습니다.",
-            "loca" : "와디럼의 호스트"
+            "loca" : "와디럼의 호스트",
+            "current":3
         },
         {
             "name" : "./img/hosting/name7.jpg",
             "img" : "./img/hosting/caresel7.jpg",
             "text" : "게스트가 소중한 사람들과 자연 속에서 교감할 수 있도록 친환경 숙소를 호스팅하는 게 참 보람 있어요.",
-            "loca" : "파라치의 호스트"
+            "loca" : "파라치의 호스트",
+            "current":4
         }
     ]
 

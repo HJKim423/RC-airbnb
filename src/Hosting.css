@@ -3,7 +3,7 @@
 
 .section-top{
     background-color: black;
-    height: 715.333px;
+    height: 660px;
     display: grid;
     grid-template-columns: 1fr 1fr;
 }
@@ -47,6 +47,7 @@
     white-space: pre-line;
     text-align: center;
     margin-bottom: 52px;
+    line-height: 70px;
 }
 
 .section-top-content__btn{
@@ -61,6 +62,40 @@
 .section-top__video{
     overflow: hidden;
 }
+
+.playBtn, .pauseBtn{
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    z-index: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 440px;
+    right:740px;
+}
+
+.playBtn2, .pauseBtn2{
+    background-color: black;
+    opacity: 0.7;
+    border-radius: 50%;
+    width:40px;
+    height:40px;
+    z-index: 2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    bottom: 470px;
+    left:50px;
+}
+
+
+
+
 
 .section-income{
     margin-top: 96px;
